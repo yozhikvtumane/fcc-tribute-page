@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://necolas.github.io/normalize.css/3.0.2/normalize.css');
+
+/* Common rules */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Lora', serif;
+	font-size: 100%;
+	color: #333;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/*Main*/
+/*Header*/
+
+header {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background-image: url(../img/header-bg.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-shadow: 0px 2px 3px #333;
+	padding: 3em;
+}
+
+h1 {
+	margin: 0;
+}
+
+/*Text section*/
+
+section {
+	margin-bottom: 1.5em;
+}
+
+#image {
+	margin: 0 auto;
+}
+
+#tribute-info {
+	padding: 0 2em;
+}
+
+/*Footer*/
+
+footer {
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-shadow: 0px 2px 3px #333;
+	background: #5088a7;
+	text-align: center;
+	padding: 2em 2em;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 730px) {
+
+	header {
+		padding: 5em 0;
+	}
+
+	h1 {
+		font-size: 3em;
+		padding: 3em 0;
+	}
+
+	h2 {
+		margin: 2em 0 1.5em 0;
+	}
+
+	#img-div {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#image {
+		margin: 0 auto;
+	}
+
+	#tribute-info {
+		width: 50%;
+		font-size: 1.25em;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	footer {
+		padding: 2em 0;
+	}
+
+}
